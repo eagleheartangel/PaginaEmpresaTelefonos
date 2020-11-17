@@ -1,0 +1,125 @@
+/* estilo */
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1 .nav-bar {
+  background-color: seagereen;
+  box-shadow: rgb(205, 50, 50);
+  min-height: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 80px;
+  color: black;
+  text-align: left;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/*  --  valores  -- */
+
+h2 {
+  font-size: 55px;
+}
+
+.nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.logo_celular {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navbar-toggler {
+  font-size: 40px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* Hover Imagenes */
+
+.imgIphone img {
+  -moz-transition: all 0.8s;
+  -webkit-animation: all 0.8s;
+  transition: all 0.8s;
+}
+
+.imgIphone:hover img {
+  -moz-transforms: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.imgSamsung img {
+  -moz-transition: all 0.8s;
+  -webkit-animation: all 0.8s;
+  transition: all 0.8s;
+}
+
+.imgSamsung:hover img {
+  -moz-transforms: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.imgXiaomi img {
+  -moz-transition: all 0.8s;
+  -webkit-animation: all 0.8s;
+  transition: all 0.8s;
+}
+
+.imgXiaomi:hover img {
+  -moz-transforms: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.imgHuawei img {
+  -moz-transition: all 0.8s;
+  -webkit-animation: all 0.8s;
+  transition: all 0.8s;
+}
+
+.imgHuawei:hover img {
+  -moz-transforms: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.imgPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  color: #00adb3;
+}
