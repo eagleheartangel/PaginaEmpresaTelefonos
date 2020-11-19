@@ -25,23 +25,40 @@
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
-    <title>WebFone</title>
+    <title>WebFon</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
+
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand celular" href="#" id="WebFone">
           <div class="row centrar">
-            <img
-              src="imagenes/logo_celular.jpg"
-              class="logo_celular"
-              alt="logo_celular"
-            />
-            <h3 class="h2">WebFone</h3>
+            <div class="animate__animated animate__rollIn animate__infinite">
+              <img
+                src="imagenes/logo_celular.png"
+                class="logo_celular"
+                alt="logo_celular"
+              />
+            </div>
+            <div class="WebFonLetra">WebFon</div>
           </div>
         </a>
         <button
@@ -68,75 +85,87 @@
               <a class="nav-link" href="#" id="Nosotros">Lista de deseos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="web">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Cliente
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Iniciar Sesion</a>
-                <a class="dropdown-item" href="#">Registrarse</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Vendedor
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"
-                  >Iniciar sesion como proveedor</a
+              <a class="nav-link" href="#" id="web">Cliente</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
-                <a class="dropdown-item" href="#">Registrarse como vendedor</a>
-              </div>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">New around here? Sign up</a>
+                  <a class="dropdown-item" href="#">Forgot password?</a>
+                </div>    
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Carrito
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="card">
-                  <div class="card-header">Tus compras</div>
-                  <div class="card-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat!
+            
+            <li class="nav-item">
+              <ion-icon
+              name="cart-outline"
+              class="animate__animated animate__rubberBand animate__infinite"
+            ></ion-icon>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                    <div class="card">
+                      <div class="card-header">Tus compras
+                      </div>
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat!
+                      </div>
+                      <div class="card-footer">Lorem, ipsum dolor.
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-footer">Lorem, ipsum dolor.</div>
                 </div>
-              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="container-fuid texto1 mb-5 mt-5">
+      <div class="row">
+        <div>
+          <div class="texto1"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid imgPrincipal mb-5 mt-5">
       <img
-        src="./imagenes/celulares.jpg"
+        src="./imagenes/celularess.png"
         class="img-fluid col-8 col-sm-8 col-md-8 col-lg-8 col-xl-6"
         alt="Responsive image"
       />
@@ -147,26 +176,37 @@
           <div class="row centrar">
             <div class="d-flex align-items-end">
               <div class="d-flex flex-column pr-3">
-                <h3>Iphone</h3>
-                <a href="#">Ver mas</a>
+                <!-- <h3>Iphone</h3> -->
+
+                <h1
+                  class="animate__animated animate__rubberBand animate__infinite"
+                >
+                  Iphone
+                </h1>
               </div>
               <img
-                src="./imagenes/iphone1.jpg"
+                src="./imagenes/iphone1.png"
                 class="img-fluid"
                 alt="Responsive image"
               />
             </div>
           </div>
         </div>
+
+        <!-- <h3>Samsung</h3> -->
+
         <div class="col imgSamsung">
           <div class="row centrar">
             <div class="d-flex align-items-end">
               <div class="d-flex flex-column pr-3">
-                <h3>Iphone</h3>
-                <a href="#">Ver mas</a>
+                <h1
+                  class="animate__animated animate__rubberBand animate__infinite"
+                >
+                  Samsung
+                </h1>
               </div>
               <img
-                src="./imagenes/samsung.jpg"
+                src="./imagenes/samm.png"
                 class="img-fluid"
                 alt="Responsive image"
               />
@@ -176,32 +216,43 @@
       </div>
     </div>
 
+    <!-- <h3>Xiaomi</h3> -->
+
     <div class="container-fluid mb-3 mt-5">
       <div class="row">
         <div class="col imgXiaomi">
           <div class="row centrar">
             <div class="d-flex align-items-end">
               <div class="d-flex flex-column pr-3">
-                <h6>Iphone</h6>
-                <a href="#">Ver mas</a>
+                <h1
+                  class="animate__animated animate__rubberBand animate__infinite"
+                >
+                  Xiaomi
+                </h1>
               </div>
               <img
-                src="./imagenes/xiaomi.jpg"
+                src="./imagenes/xiaomi.png"
                 class="img-fluid"
                 alt="Responsive image"
               />
             </div>
           </div>
         </div>
-        <div class="col imgIphone">
+
+        <!-- <h3>Huawei</h3> -->
+
+        <div class="col imgHuawei">
           <div class="row centrar">
             <div class="d-flex align-items-end">
               <div class="d-flex flex-column pr-3">
-                <h6>Iphone</h6>
-                <a href="#">Ver mas</a>
+                <h1
+                  class="animate__animated animate__rubberBand animate__infinite"
+                >
+                  Huawei
+                </h1>
               </div>
               <img
-                src="./imagenes/huawei.jpg"
+                src="./imagenes/huawei.png"
                 class="img-fluid"
                 alt="Responsive image"
               />
@@ -210,6 +261,7 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,6 +1,168 @@
+/* COMENTARIOS =  CTRL K + C 
+   DESCOMENTAR =  CTRL K + U */
+
 /* estilo */
-body {
+
+.body {
   font-family: 'Titillium Web', sans-serif;
+  background-color: blue;
+}
+
+/* burbujas */
+
+.burbuja {
+  border-radius: 50%;
+  /* background: rgb(0, 255, 72); */
+  opacity: 0.3;
+
+  position: absolute;
+  bottom: -150;
+
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  background-color: blue;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+  background-color: rgb(51, 255, 0);
+}
+
+.burbuja:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  left: 15%;
+  animation-duration: 2s;
+  animation-delay: 7s;
+  background-color: yellow;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  background-color: red;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  background-color: blue;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  background-color: brown;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  background-color: orangered;
+}
+
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  background-color: brown;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  background-color: rgb(255, 9, 206);
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  background-color: rgb(0, 255, 200);
+}
+
+.burbuja:nth-child(11) {
+  width: 50px;
+  height: 50px;
+  left: 77%;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  background-color: green;
+}
+
+.burbuja:nth-child(12) {
+  width: 40px;
+  height: 40px;
+  left: 80%;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  background-color: yellow;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------- */
+
+.WebFonLetra {
+  font-family: 'Homer Simpson UI';
+  font-size: 170%;
 }
 
 h1 .nav-bar {
@@ -29,8 +191,6 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-
-/*  --  valores  -- */
 
 h2 {
   font-size: 55px;
@@ -119,7 +279,4 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.titulo {
-  color: #00adb3;
 }
